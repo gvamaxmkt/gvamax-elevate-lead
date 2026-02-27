@@ -8,6 +8,10 @@ interface PlanFeature {
 }
 
 const planNames = ["Starter", "Starter Pro", "Equipo", "Empresa", "Plan Black"];
+const planPrices = ["$25.130", "$34.390", "$55.540", "$99.360", "Personalizado"];
+const planNotes = ["+ IVA/mes", "+ IVA/mes", "+ IVA/mes", "+ IVA/mes", "Consultá el costo"];
+const planBadges = ["Económico", "Más vendido", null, null, null];
+const highlightIdx = 1;
 
 const features: PlanFeature[] = [
   { label: "Usuarios", values: ["1", "2", "5", "10", "Personalizado"] },
@@ -38,18 +42,25 @@ const PricingSection = () => (
             <tr>
               <th className="text-left py-4 px-3 font-medium text-muted-foreground">Característica</th>
               {planNames.map((n, i) => (
-                <th key={n} className={`py-4 px-3 font-bold text-foreground text-center ${i === 2 ? "bg-accent rounded-t-xl" : ""}`}>
-                  {n}
+                <th key={n} className={`py-4 px-3 text-center relative ${i === highlightIdx ? "bg-accent rounded-t-xl" : ""}`}>
+                  {planBadges[i] && (
+                    <span className={`inline-block text-[10px] font-bold uppercase tracking-wide px-2.5 py-0.5 rounded-full mb-1.5 ${i === highlightIdx ? "bg-primary text-primary-foreground" : "bg-muted text-muted-foreground"}`}>
+                      {planBadges[i]}
+                    </span>
+                  )}
+                  <div className="font-bold text-foreground">{n}</div>
+                  <div className="text-lg font-extrabold text-foreground mt-1">{planPrices[i]}</div>
+                  <div className="text-[11px] text-muted-foreground">{planNotes[i]}</div>
                 </th>
               ))}
             </tr>
           </thead>
           <tbody>
-            {features.map((f, fi) => (
+            {features.map((f) => (
               <tr key={f.label} className="border-t border-border">
                 <td className="py-3 px-3 text-muted-foreground">{f.label}</td>
                 {f.values.map((v, vi) => (
-                  <td key={vi} className={`py-3 px-3 text-center ${vi === 2 ? "bg-accent" : ""}`}>
+                  <td key={vi} className={`py-3 px-3 text-center ${vi === highlightIdx ? "bg-accent" : ""}`}>
                     {typeof v === "boolean" ? (
                       v ? <Check className="h-4 w-4 text-primary mx-auto" /> : <X className="h-4 w-4 text-muted-foreground/40 mx-auto" />
                     ) : (
@@ -62,9 +73,9 @@ const PricingSection = () => (
             <tr className="border-t border-border">
               <td className="py-4 px-3" />
               {planNames.map((n, i) => (
-                <td key={n} className={`py-4 px-3 text-center ${i === 2 ? "bg-accent rounded-b-xl" : ""}`}>
-                  <Button variant={i === 2 ? "hero" : "hero-outline"} size="sm" asChild>
-                    <a href="#prueba">Empezar</a>
+                <td key={n} className={`py-4 px-3 text-center ${i === highlightIdx ? "bg-accent rounded-b-xl" : ""}`}>
+                  <Button variant={i === highlightIdx ? "hero" : "hero-outline"} size="sm" asChild>
+                    <a href="#prueba">{i === 4 ? "Consultar" : "Empezar"}</a>
                   </Button>
                 </td>
               ))}
