@@ -163,8 +163,8 @@ const WhatsAppSection = () => (
             </ul>
 
             <Button
-              variant={plan.highlight ? "secondary" : "hero"}
-              className="w-full mt-6"
+              variant={plan.highlight ? "outline" : "hero"}
+              className={`w-full mt-6 ${plan.highlight ? "bg-primary-foreground text-foreground hover:bg-primary-foreground/90 border-primary-foreground" : ""}`}
               asChild
             >
               <a href="#contacto">Contactanos</a>
