@@ -31,8 +31,14 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-xs opacity-50">
-        © 2026 GVAMax. Todos los derechos reservados.
+      <div className="mt-10 pt-6 border-t border-primary-foreground/20 text-center text-xs opacity-50 space-y-1">
+        <p>© 2026 GVAMax. Todos los derechos reservados.</p>
+        <p>
+          Powered by{" "}
+          <a href="https://codeep.com.ar/" target="_blank" rel="noopener noreferrer" className="underline hover:opacity-100">
+            Codeep
+          </a>
+        </p>
       </div>
     </div>
   </footer>
