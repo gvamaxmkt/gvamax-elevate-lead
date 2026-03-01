@@ -7,7 +7,7 @@ const Footer = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
           <img src={logo} alt="GVAMax" className="h-10 brightness-0 invert mb-4" />
-          <p className="text-sm opacity-70">CRM inmobiliario pensado para Latinoamérica.</p>
+          <p className="text-sm opacity-70">La plataforma todo-en-uno para gestionar y hacer crecer tu inmobiliaria.</p>
         </div>
 
         <div className="space-y-3 text-sm">
