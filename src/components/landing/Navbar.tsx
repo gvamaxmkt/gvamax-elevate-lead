@@ -5,8 +5,8 @@ import logo from "@/assets/logo-gvamax.png";
 
 const navLinks = [
   { label: "Beneficios", href: "#beneficios" },
-  { label: "WhatsApp + IA", href: "#whatsapp" },
   { label: "Planes", href: "#planes" },
+  { label: "WhatsApp + IA", href: "#whatsapp" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -14,7 +14,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground backdrop-blur-lg border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground backdrop-blur-lg border-b border-foreground">
       <div className="container flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-2">
           <img src={logo} alt="GVAMax" className="h-9" />
@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
 
       {open && (
-        <div className="md:hidden bg-foreground border-b border-border pb-4 px-6 space-y-3">
+        <div className="md:hidden bg-foreground border-b border-foreground pb-4 px-6 space-y-3">
           {navLinks.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block text-sm font-medium text-primary-foreground/70 hover:text-primary py-1">
               {l.label}

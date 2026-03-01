@@ -167,7 +167,7 @@ const WhatsAppSection = () => (
               className={`w-full mt-6 ${plan.highlight ? "bg-primary-foreground text-foreground hover:bg-primary-foreground/90 border-primary-foreground" : ""}`}
               asChild
             >
-              <a href="#contacto">Contactanos</a>
+              <a href="https://wa.me/5493516418412?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20el%20plan%20de%20WhatsApp%20%2B%20IA" target="_blank" rel="noopener noreferrer">Contactanos</a>
             </Button>
           </motion.div>
         ))}
