@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
-import heroImg from "@/assets/hero-dashboard.jpg";
+import heroImg from "@/assets/hero-dashboard.png";
 
 const bullets = [
   "Simplificá tu gestión diaria",
