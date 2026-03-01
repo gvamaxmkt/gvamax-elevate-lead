@@ -15,11 +15,11 @@ const HeroSection = () => (
     <div className="container grid md:grid-cols-2 gap-12 items-center">
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-foreground">
-          Inmobiliaria{" "}
-          <span className="text-primary">simple, fácil</span> y segura
+          Gestioná tu inmobiliaria{" "}
+          <span className="text-primary">desde un solo lugar</span>
         </h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-lg">
-          Un CRM inmobiliario que se integra automáticamente con los principales portales.
+          Publicá propiedades, atendé clientes y automatizá tu negocio con un CRM integrado a portales
         </p>
 
         <ul className="mt-6 space-y-2">

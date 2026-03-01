@@ -5,7 +5,7 @@ import WhatsAppSection from "@/components/landing/WhatsAppSection";
 import PricingSection from "@/components/landing/PricingSection";
 import TrialSection from "@/components/landing/TrialSection";
 import DemoSection from "@/components/landing/DemoSection";
-import ContactSection from "@/components/landing/ContactSection";
+
 import Footer from "@/components/landing/Footer";
 
 const Index = () => (
@@ -17,7 +17,6 @@ const Index = () => (
     <WhatsAppSection />
     <TrialSection />
     <DemoSection />
-    <ContactSection />
     <Footer />
   </>
 );
