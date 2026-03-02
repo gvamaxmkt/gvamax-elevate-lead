@@ -15,12 +15,20 @@ const highlightIdx = 1;
 
 const features: PlanFeature[] = [
   { label: "Usuarios", values: ["1", "2", "5", "10", "Personalizado"] },
-  { label: "Inmuebles", values: ["50", "150", "500", "Ilimitados", "Ilimitados"] },
-  { label: "Página web", values: [true, true, true, true, true] },
-  { label: "Integraciones portales", values: [false, true, true, true, true] },
-  { label: "Apps móviles", values: [false, false, true, true, true] },
-  { label: "API", values: [false, false, false, true, true] },
-  { label: "Soporte prioritario", values: [false, false, true, true, true] },
+  { label: "Inmuebles", values: ["50", "150", "300", "Ilimitado", "A medida"] },
+  { label: "Página web", values: ["Full", "Full", "Full", "Premium", "Premium"] },
+  { label: "Publicación masiva", values: [true, true, true, true, true] },
+  { label: "Red de inmobiliarias", values: [false, true, true, true, true] },
+  { label: "Publicá en portales premium", values: [true, true, true, true, true] },
+  { label: "Apps Android / iOS", values: [true, true, true, true, true] },
+  { label: "CRM", values: [true, true, true, true, true] },
+  { label: "Equipo comerciales", values: [true, true, true, true, true] },
+  { label: "Acceso vía API", values: [false, true, true, true, true] },
+  { label: "Integración WhatsApp API Business", values: [false, false, false, true, true] },
+  { label: "Integración Facebook / Instagram", values: [false, false, false, true, true] },
+  { label: "Ejecutivo de cuentas", values: [false, false, false, true, true] },
+  { label: "Asistencia por WhatsApp", values: [true, true, true, true, true] },
+  { label: "Capacitaciones", values: [true, true, true, true, true] },
 ];
 
 const PricingSection = () => (
