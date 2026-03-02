@@ -91,6 +91,7 @@ const PricingSection = () => (
           </tbody>
         </table>
       </div>
+      <p className="text-center text-sm text-muted-foreground mt-6">Las integraciones con los portales premium tienen un costo aparte.</p>
     </div>
   </section>
 );
