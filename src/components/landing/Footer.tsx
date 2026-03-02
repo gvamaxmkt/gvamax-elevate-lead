@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Mail, Phone, Clock } from "lucide-react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import logo from "@/assets/logo-gvamax.png";
+import logoNegro from "@/assets/logo-gva-negro.png";
 
 const Footer = () => {
   const [showPrivacy, setShowPrivacy] = useState(false);
@@ -55,7 +56,7 @@ const Footer = () => {
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
           <DialogHeader>
             <div className="flex items-center gap-3 pb-3 mb-3 border-b border-foreground">
-              <img src={logo} alt="GVAMax" className="h-8" />
+              <img src={logoNegro} alt="GVAMax" className="h-10" />
             </div>
             <DialogTitle className="text-xl font-bold">POLÍTICA DE PRIVACIDAD</DialogTitle>
             <p className="text-xs text-muted-foreground">Última actualización: 1 de enero de 2026</p>
