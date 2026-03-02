@@ -54,11 +54,11 @@ const Footer = () => {
       <Dialog open={showPrivacy} onOpenChange={setShowPrivacy}>
         <DialogContent className="max-w-2xl max-h-[80vh] overflow-y-auto">
           <DialogHeader>
-            <div className="flex items-center gap-3 mb-2">
+            <div className="flex items-center gap-3 pb-3 mb-3 border-b border-foreground">
               <img src={logo} alt="GVAMax" className="h-8" />
             </div>
             <DialogTitle className="text-xl font-bold">POLÍTICA DE PRIVACIDAD</DialogTitle>
-            <p className="text-xs text-muted-foreground">Última actualización: 10 de abril de 2025</p>
+            <p className="text-xs text-muted-foreground">Última actualización: 1 de enero de 2026</p>
           </DialogHeader>
           <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
             <p>NET Desarrollos SRL se compromete a proteger la privacidad de nuestros usuarios. Esta Política de Privacidad describe cómo recopilamos, utilizamos y protegemos su información personal en relación con el uso de nuestra plataforma.</p>
