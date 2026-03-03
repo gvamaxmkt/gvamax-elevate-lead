@@ -33,10 +33,10 @@ const HeroSection = () => (
 
         <div className="mt-8 flex flex-wrap gap-4">
           <Button variant="hero" size="lg" asChild>
-            <a href="#prueba">Probar gratis ahora</a>
+            <a href="https://wa.me/5493516418412?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20GVAMax" target="_blank" rel="noopener noreferrer">Probar gratis ahora</a>
           </Button>
           <Button variant="hero-outline" size="lg" asChild>
-            <a href="#demo">Coordinar demo</a>
+            <a href="https://wa.me/5493516418412?text=Hola%2C%20quiero%20coordinar%20una%20demo%20de%20GVAMax" target="_blank" rel="noopener noreferrer">Coordinar demo</a>
           </Button>
         </div>
       </motion.div>
