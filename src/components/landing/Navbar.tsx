@@ -28,7 +28,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="hero" size="sm" asChild>
-            <a href="#prueba">Probar gratis</a>
+            <a href="https://wa.me/5493516418412?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20GVAMax" target="_blank" rel="noopener noreferrer">Probar gratis</a>
           </Button>
         </div>
 
@@ -46,7 +46,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button variant="hero" size="sm" className="w-full" asChild>
-            <a href="#prueba">Probar gratis</a>
+            <a href="https://wa.me/5493516418412?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20GVAMax" target="_blank" rel="noopener noreferrer">Probar gratis</a>
           </Button>
         </div>
       )}
