@@ -80,13 +80,19 @@ const PricingSection = () => (
             ))}
             <tr className="border-t border-border">
               <td className="py-4 px-3" />
-              {planNames.map((n, i) => (
-                <td key={n} className={`py-4 px-3 text-center ${i === highlightIdx ? "bg-accent rounded-b-xl" : ""}`}>
-                  <Button variant={i === highlightIdx ? "hero" : "hero-outline"} size="sm" asChild>
-                    <a href="#prueba">{i === 4 ? "Consultar" : "Empezar"}</a>
-                  </Button>
-                </td>
-              ))}
+              {planNames.map((n, i) => {
+                const msg = i === 4
+                  ? `Hola! Estoy interesado en el ${n}. Me gustaría recibir más información.`
+                  : `Hola! Estoy interesado en el plan ${n} (${planPrices[i]}). Me gustaría recibir más información.`;
+                const waUrl = `https://wa.me/5493516418412?text=${encodeURIComponent(msg)}`;
+                return (
+                  <td key={n} className={`py-4 px-3 text-center ${i === highlightIdx ? "bg-accent rounded-b-xl" : ""}`}>
+                    <Button variant={i === highlightIdx ? "hero" : "hero-outline"} size="sm" asChild>
+                      <a href={waUrl} target="_blank" rel="noopener noreferrer">{i === 4 ? "Consultar" : "Empezar"}</a>
+                    </Button>
+                  </td>
+                );
+              })}
             </tr>
           </tbody>
         </table>
